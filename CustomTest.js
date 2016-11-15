@@ -39,9 +39,9 @@ PostmanTest.prototype.runTest = function( redlineCallback )
 	setTimeout(function() {
 
 		newman.run({
-			collection: this.newmanCollection,
-			environment: this.newmanEnvironment,
-			globals: this.newmanGlobals,
+			collection: that.newmanCollection,
+			environment: that.newmanEnvironment,
+			globals: that.newmanGlobals,
 			iterationCount: this.newmanIterations,
 			reporters: ['cli','html'],
 			reporter: {html:{export:'output/report.html'}},

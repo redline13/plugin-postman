@@ -19,7 +19,7 @@
 							"script": {
 								"type": "text/javascript",
 								"exec": [
-									"tests[\"response code is UGLY\"] = responseCode.code === 402;",
+									"tests[\"response code should be 401\"] = responseCode.code === 401;",
 									"tests[\"response has WWW-Authenticate header\"] = (postman.getResponseHeader('WWW-Authenticate'));",
 									"",
 									"var authenticateHeader = postman.getResponseHeader('WWW-Authenticate'),",
