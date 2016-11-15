@@ -91,7 +91,7 @@ PostmanTest.prototype.runTest = function( redlineCallback )
 			}
 			var kb = items[args.cursor.ref].response.responseSize || 0;
 			
-			that.redlineApi.recordURLPageLoad(name, items[args.cursor.ref].end / 1000, resTime, isError, kb);
+			that.redlineApi.recordURLPageLoad(name, items[args.cursor.ref].end / 1000, resTime/1000, isError, kb);
 			delete items[args.cursor.ref];
 		})
 		.on( 'exception', function( err, args ){
