@@ -1,0 +1,7 @@
+{
+  "name": "LoadAgent",
+  "description": "Load agent",
+  "dependencies": {
+    "newman" : "*"
+  }
+}
