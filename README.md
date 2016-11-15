@@ -16,7 +16,7 @@ You can run any Postman collection on RedLine13 as a performance test with this 
 ### Step 2 Package your test
 - We require the package.json which is provided and includes newman.  For this reason we need to package our test run. 
 
-	```tar cvf postman.tar CustomTest.js Echo.postman_collection.json package.json```
+	```tar cvf postman.tar CustomTest.js Echo.postman_collection package.json```
 - Include your test(CustomTest.js), collection(Postman collection), package.json
 
 ### Step 3 Run your test.
