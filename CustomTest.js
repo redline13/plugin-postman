@@ -42,7 +42,7 @@ PostmanTest.prototype.runTest = function( redlineCallback )
 			collection: that.newmanCollection,
 			environment: that.newmanEnvironment,
 			globals: that.newmanGlobals,
-			iterationCount: this.newmanIterations,
+			iterationCount: that.newmanIterations,
 			reporters: ['cli','html'],
 			reporter: {html:{export:'output/report.html'}},
 			noColor: true
